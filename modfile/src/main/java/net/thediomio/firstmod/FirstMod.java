@@ -1,9 +1,7 @@
 package net.thediomio.firstmod;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -14,7 +12,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.ForgeRegistries;
 import net.thediomio.firstmod.block.ModBlocks;
 import net.thediomio.firstmod.item.ModCreativeModeTabs;
 import net.thediomio.firstmod.item.ModItems;
@@ -48,7 +45,11 @@ public class FirstMod
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.SAPPHIRE); //Adicionar a sapphire na tab de ingredients. (continua sem nome, textura... etc)
+            event.accept(ModItems.SAPPHIRE);
+            event.accept(ModBlocks.SAPPHIRE_BLOCK);
+            event.accept(ModItems.RAW_ORICHALCUM);
+            event.accept(ModItems.ORICHALCUM_INGOT);
+            event.accept(ModBlocks.ORICHALCUM_ORE);
         }
     }
 

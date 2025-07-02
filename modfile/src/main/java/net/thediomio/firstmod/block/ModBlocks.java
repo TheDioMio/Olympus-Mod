@@ -1,6 +1,5 @@
 package net.thediomio.firstmod.block;
 
-import net.minecraft.resources.RegistryDataLoader;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -25,6 +24,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> ORICHALCUM_ORE = registerBlock("orichalcum_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

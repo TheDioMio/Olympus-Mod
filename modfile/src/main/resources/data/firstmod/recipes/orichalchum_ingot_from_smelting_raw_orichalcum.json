@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 230,
+  "experience": 4,
+  "group": "orichalcum_ingot",
+  "ingredient": {
+    "item": "minecraft:raw_orichalcum"
+  },
+  "result": "minecraft:orichalcum_ingot"
+}

@@ -22,4 +22,11 @@ public class ModItems {
     //Criar um item
     public static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> ORICHALCUM_INGOT = ITEMS.register("orichalcum_ingot",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> RAW_ORICHALCUM = ITEMS.register("raw_orichalcum",
+            () -> new Item(new Item.Properties()));
+
 }

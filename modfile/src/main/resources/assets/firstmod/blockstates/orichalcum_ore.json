@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "firstmod:block/orichalcum_block"
+      "model": "firstmod:block/orichalcum_ore"
     }
   }
 }

@@ -4,7 +4,6 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -24,8 +23,10 @@ public class ModCreativeModeTabs {
             .title(Component.translatable("creativetab.tutorial_tab"))
             .displayItems((itemDisplayParameters, output) -> {
               output.accept(ModItems.SAPPHIRE.get());
-              output.accept(Items.BAMBOO_PLANKS);
               output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+              output.accept(ModItems.ORICHALCUM_INGOT.get());
+              output.accept(ModBlocks.ORICHALCUM_ORE.get());
+              output.accept(ModItems.RAW_ORICHALCUM.get());
             })
             .build());
 }

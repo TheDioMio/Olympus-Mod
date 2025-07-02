@@ -1,5 +1,8 @@
 {
   "item.firstmod.sapphire" : "Sapphire",
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab",
-  "block.firstmod.sapphire_block": "Block of Sapphire"
+  "block.firstmod.sapphire_block": "Block of Sapphire",
+  "item.firstmod.orichalcum_ingot": "Orichalcum Ingot",
+  "item.firstmod.raw_orichalcum": "Raw Orichalcum",
+  "block.firstmod.orichalcum_ore": "Orichalcum Ore"
 }
